@@ -18,7 +18,13 @@ color:#FFF8E5;
 
 
 .nav-style{
+    cursor: pointer;
     color:white;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+
+.logotype{
+    width: 100px;
 }

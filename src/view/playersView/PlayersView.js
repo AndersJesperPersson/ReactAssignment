@@ -1,6 +1,8 @@
 import React from "react";
 import Cards from "../../components/cards/Cards";
 import Participants from "../../components/cards/Participants";
+import "./PlayersView.css"
+
 
 function createCard(participant){
     return(
@@ -17,8 +19,10 @@ function createCard(participant){
 export const PlayersView = () =>{
 
     return(
-        <div>
+        <div >
+            <div className="card-wrapper">
             {Participants.map(createCard)}
+            </div>
         </div>
     )
 }

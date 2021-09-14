@@ -1,12 +1,14 @@
 
 .Cards-container{
     position: relative;
-    margin:auto;
+    margin:2rem auto;
     text-align: center;
     box-shadow: 0 2px 2px 2px rgb(95, 94, 94);
     height: 250px;
     width: 250px;
     color: #FFF8E5;
+    
+    
 }
 
 .Cards-top{
@@ -59,7 +61,7 @@
   }
 
 .Cards-header{
-    margin-bottom:0;
+    margin:0;
     
 }
 .Cards-paragraf{
