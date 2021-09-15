@@ -17,7 +17,7 @@ function createCard(participant){
 }
 
 export const PlayersView = () =>{
-
+   
     return(
         <div >
             <div className="card-wrapper">

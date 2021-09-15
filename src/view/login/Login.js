@@ -3,6 +3,7 @@ import "./Login.module.css"
 import { UserContext} from '../../shared/provider/UserProvider'
 import Members from "../../shared/members/Members"
 import { useHistory } from 'react-router'
+import LocalStorage from '../../shared/storage/LocalStorage'
 
 export const Login = () => {
 const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
@@ -18,12 +19,11 @@ const SignIn = () =>{
   const doesMemberExist = Members.find((profile) => profile.username === username);
   if(doesMemberExist && doesMemberExist.password === password) {
     setAuthenticatedUser(doesMemberExist)
+    localStorage.setItem(LocalStorage.username, username)
+    localStorage.setItem(LocalStorage.password, password)
     history.goBack()
   }
     
-    
-    
-
   else alert("Fel inloggninsuppgifter") 
 
 }

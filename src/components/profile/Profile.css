@@ -1,7 +1,19 @@
 .profile-picture{
     position: absolute;
     width: 50px;
-    top: 2.5rem;
-    margin-left: 1rem;
+    left:-3.8rem;
+    bottom: 0.5rem;
+    border-radius: 50%;
+    
+       
+}
+
+.profile-container{
+  position: relative;
+  padding-bottom:2rem;
+  margin-right: 2rem;
     
 }
+
+
+

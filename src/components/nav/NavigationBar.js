@@ -11,11 +11,11 @@ function NavigationBar (){
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
     function switchLoginAndProfile(){
-        return authenticatedUser? <Profile/>: <span onClick={() => history.push(RoutingPath.loginView)} className="nav-style">Login</span>
+        return authenticatedUser? <Profile/>: <span onClick={() => history.push(RoutingPath.loginView)} className="nav-style login">Login</span>
 
     }
     return (
-<nav>
+<nav className="nav-wrapper">
     <img className="logotype" src={Logotype} alt="golf-player"/> 
         <ul className="nav-links"> 
         <li>

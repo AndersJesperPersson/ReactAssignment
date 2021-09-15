@@ -1,0 +1,24 @@
+.drop-content{
+    position: absolute;
+    background-color:rgb(64, 131, 20);
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    padding:0  0.2rem 0.2rem;
+    display: none;
+    
+    
+}
+
+.drop-header{
+    top: 0;
+}
+
+.btn-logout{
+margin:auto;
+display:flex;
+}
+
+.profile-container:hover .drop-content{
+    display: block;
+}

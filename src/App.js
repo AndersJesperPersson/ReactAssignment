@@ -4,6 +4,7 @@ import { UserProvider } from "./shared/provider/UserProvider";
 import NavigationBar from "./components/nav/NavigationBar"
 
 
+
 function App() {
   return (  
     <UserProvider>
@@ -15,4 +16,5 @@ function App() {
 }
 
 export default App;
+
 
