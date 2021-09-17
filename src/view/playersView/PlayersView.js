@@ -16,13 +16,27 @@ function createCard(participant){
     );
 }
 
+function first8(index){
+    for(let i= index; i<8; i++){
+        createCard(Participants[i])
+    }
+}
+
 export const PlayersView = () =>{
    
     return(
         <div >
             <div className="card-wrapper">
+
             {Participants.map(createCard)}
             </div>
-        </div>
+
+            <div className="card-wrapper">
+            {Participants.map(createCard)}
+            </div>
+
+
+            </div>
+       
     )
 }

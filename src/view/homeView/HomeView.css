@@ -1,0 +1,23 @@
+.hero-img{
+    background-image: url("../../shared/img/golfheader.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 4.7rem);
+   
+}
+
+.hero-text{
+
+   text-align: center;
+   padding-top: 25vh;
+   letter-spacing: 7px;
+   color: #FDEF96;
+}
+
+.hero-header{
+    margin-top:0;
+    font-weight: 100;
+    font-size: 8vh;
+    
+}
