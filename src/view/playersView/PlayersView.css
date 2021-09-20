@@ -5,6 +5,27 @@
     padding-bottom: 7rem;
 }
 
-.space{
-    height: 13vh;
+
+
+.Line{
+    margin: 0 auto;
+    border-left: 4px solid #F7B71D;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.team-header{
+    margin: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #FDEF96;
+    font-weight: 100;
+    font-size: 80px;
+    margin-bottom: 2rem;
+
+}
+
+body{
+    background-color: rgb(137, 172, 137);
 }

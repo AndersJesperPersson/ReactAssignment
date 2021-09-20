@@ -26,30 +26,7 @@ function Weather() {
         setCity(res.data.name)
 
     }
-
-
-    const Weath = () => {
-        return <div>
-            <div className="winfo">
-                Weather information for {city}
-                <hr></hr>
-            </div>
-            <div className="Weath">
-                <div className="welement">
-                    Weather : {weather.descp}
-                </div>
-                <div className="welement">
-                    Temperature : {weather.temp} &#8451;
-                </div>
-                <div className="welement">
-                    Humidity :{weather.humidity} %
-                </div>
-                <div className="welement">
-                    Wind :  {weather.wind} m/s
-                </div>
-            </div>
-        </div>
-    }
+    
     return (<>
         <div className="weathhead">Weather Info</div>
         <div className="mainweather">
@@ -61,7 +38,7 @@ function Weather() {
                     <button className="bttn">Search</button>
                 </form>
 
-                {weather && <Weath />}
+            
             </div>
         </div>
     </>

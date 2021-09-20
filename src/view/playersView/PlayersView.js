@@ -1,42 +1,55 @@
 import React from "react";
 import Cards from "../../components/cards/Cards";
-import Participants from "../../components/cards/Participants";
+import TeamLeft from "../../shared/members/TeamLeft";
+import TeamRight from "../../shared/members/TeamRight";
 import "./PlayersView.css"
+import Grid from '@mui/material/Grid';
 
 
-function createCard(participant){
+
+function createCard(participant,color){
+
     return(
         <Cards
         key={participant.id}
         name={participant.name}
         hcp={participant.HCP}
         img={participant.imgURL}
+        styleTop={participant.styleTop}
+     
         />
        
     );
 }
 
-function first8(index){
-    for(let i= index; i<8; i++){
-        createCard(Participants[i])
-    }
-}
 
 export const PlayersView = () =>{
    
     return(
-        <div >
-            <div className="card-wrapper">
-
-            {Participants.map(createCard)}
+        <div>
+            
+            <Grid container spacing={2}>
+                <Grid item xs={5} container>
+                <h2 className="team-header">Team Left</h2>
+            <div className="card-wrapper" >
+            {TeamLeft.map(createCard)}
             </div>
+            </Grid>
 
-            <div className="card-wrapper">
-            {Participants.map(createCard)}
+            <Grid item xs={2} container>
+            <div className="Line"></div>
+            </Grid >
+
+            <Grid item xs={5} container>
+
+            <h2 className="team-header">Team Right</h2>
+            <div className="card-wrapper" >
+            {TeamRight.map(createCard)}
             </div>
-
-
+            </Grid>
+            </Grid>
             </div>
+            
        
     )
 }

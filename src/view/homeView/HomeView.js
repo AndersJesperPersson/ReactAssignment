@@ -12,7 +12,7 @@ export const HomeView = () => {
   return (
     <div className="hero-img">
       <div className="hero-text"> 
-      <h1 className="hero-header">Ryder Cup</h1>
+      <h1 className="hero-header" style={{ backgrundColor:'blue'}}>Ryder Cup</h1>
       <h3>2021</h3>
       </div>
       
