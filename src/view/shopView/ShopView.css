@@ -1,3 +1,13 @@
 .Ticket-wrapper{
     padding-bottom: 8vh;
 }
+
+.spinner-container{
+    text-align: center;
+    margin:auto;
+    margin-top: 15vh;
+    color: #FDEF96;
+    font-size: 3vh;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
