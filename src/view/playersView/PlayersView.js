@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
 
 
-function createCard(participant,color){
+function createCard(participant){
 
     return(
         <Cards

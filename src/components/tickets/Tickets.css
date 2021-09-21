@@ -1,5 +1,18 @@
 .Ticket-container{
-    height: 250 px; 
-    width: 250 px; 
+    position: relative;
+ padding: 0 2rem 2rem 2rem;
+ margin: 1rem auto;
+ height: 300px;
+ width: 450px;
 
+}
+
+.Ticket-img{
+    display: block;
+    height: 190px;
+    width: 300px;
+}
+
+.Ticket-btn{
+    
 }
