@@ -10,3 +10,18 @@ bottom: 0;
     
 
 }
+
+.weather-container{
+    position: relative;
+    margin-top: 1.2rem;
+    color: #2B580C;
+    font-weight: 600;
+
+}
+
+.weather-img{
+    height: 40px;
+position: absolute;
+top: -0.5rem;
+   
+}

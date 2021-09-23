@@ -7,9 +7,8 @@ import Spinner from "../../shared/img/spinner.gif"
 
 
 export const ShopView = () => {
-    const [serverData, setServerData] = useState();
+const [serverData, setServerData] = useState();
 
-    
     
 const fetchData = async() =>{
 
@@ -22,15 +21,14 @@ const fetchData = async() =>{
 alert("Error retrieving data from server: " + e);
     }
 
-    if(!serverData)
-    return( <div>Hej</div>)
+    
 }
 
 const displayData = () => {
   if(serverData){
     return(
        
-            serverData.map((myEvent) => 
+       serverData.map((myEvent) => 
         <Tickets
         key = {myEvent?.id}
         name={myEvent?.name}
@@ -40,8 +38,7 @@ const displayData = () => {
         url= {myEvent.url}
         img= {myEvent.images[0].url}
         />
-        )
-        
+        )    
     )
   }
     else {
@@ -66,6 +63,6 @@ fetchData();
 {displayData()} 
 </Grid>
 </Grid>
-        </div>
+</div>
     )
 }

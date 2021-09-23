@@ -29,18 +29,18 @@ export const PlayersView = () =>{
         <div>
             
             <Grid container spacing={2}>
-                <Grid item xs={5} container>
+                <Grid item lg={5} container>
                 <h2 className="team-header">Team Left</h2>
             <div className="card-wrapper" >
             {TeamLeft.map(createCard)}
             </div>
             </Grid>
 
-            <Grid item xs={2} container>
+            <Grid item lg={2} container>
             <div className="Line"></div>
             </Grid >
 
-            <Grid item xs={5} container>
+            <Grid item lg={5} container>
 
             <h2 className="team-header">Team Right</h2>
             <div className="card-wrapper" >

@@ -23,7 +23,7 @@ function Logout (){
         <div className="drop-content">
             <h3 className="drop-header">Hej</h3>
             
-            <p> Email@gamil.com</p>
+            <p>{props.email}</p>
             <button className="btn-logout" onClick={ () => Logout()}>Logout</button>
             
 

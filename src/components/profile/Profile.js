@@ -17,7 +17,7 @@ export const Profile= () => {
         <div className="profile-container"> 
             <span className="nav-style">{getMemberDetails.username}</span>
             <img className="profile-picture" alt="profile" src={getMemberDetails.imgURL}/>  
-           <DropContent/>
+           <DropContent email={getMemberDetails.email}/>
         </div>
         </div>
     )

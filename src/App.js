@@ -3,7 +3,7 @@ import Routes from "./routes/Routes";
 import { UserProvider } from "./shared/provider/UserProvider";
 import NavigationBar from "./components/nav/NavigationBar"
 import { Footer } from "./components/footer/Footer";
-import {WheaterProvider} from "./shared/provider/WheaterProvider";
+import { WeatherProvider } from "./shared/provider/WeatherProvider";
 import { CartProvider } from "./shared/provider/CartProvider";
 
 
@@ -11,12 +11,12 @@ function App() {
   return (  
     <UserProvider>
     <CartProvider>
-    <WheaterProvider> 
+    <WeatherProvider> 
     <Routes>
     <NavigationBar/>
     </Routes>
     <Footer/>
-    </WheaterProvider>
+    </WeatherProvider>
     </CartProvider>
     </UserProvider>
   );
