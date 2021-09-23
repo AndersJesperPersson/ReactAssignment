@@ -8,6 +8,7 @@ import { UserContext } from "../shared/provider/UserProvider";
 import LocalStorage from "../shared/storage/LocalStorage";
 import { ShopView } from "../view/shopView/ShopView";
 import { CartView } from "../view/cartView/CartView";
+import { PlayerInformation } from "../components/playerInformation/PlayerInformation";
 import { useHistory } from "react-router";
 
 
@@ -33,7 +34,10 @@ const isUserAuthenticated =()=>{
 
 const dontShowIfLoggedIn = (view) => authenticatedUser? HomeView : view
 
-const needAuthentication = (view) => authenticatedUser? view : HomeView
+const needAuthentication = (view) => authenticatedUser? view : HomeView 
+
+
+
 
 
   return (
@@ -45,6 +49,7 @@ const needAuthentication = (view) => authenticatedUser? view : HomeView
 <Route path={RoutingPath.loginView} exact component={dontShowIfLoggedIn(Login)}></Route>
 <Route path={RoutingPath.shopView} exact component={needAuthentication(ShopView)}></Route>
 <Route path={RoutingPath.cartView} exact component={needAuthentication(CartView)}></Route>
+<Route path={RoutingPath.playerInformation} exact component={PlayerInformation}></Route>
 <Route path={RoutingPath.homeView} component={HomeView}></Route>
 
 </Switch>

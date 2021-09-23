@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
+import RoutingPath from "../../routes/RoutingPath";
 import "./Cards.css"
+import { useHistory } from "react-router";
 
 
 
@@ -7,7 +9,7 @@ import "./Cards.css"
 
 function Cards(props){
   
-
+const history = useHistory()
     
     return(
         
@@ -19,7 +21,7 @@ function Cards(props){
     <img className="Cards-img" src={props.img} alt="player"/>
     </div>
     <div className="Cards-bottom" style={props.styleBottom}>
-    <button className="Cards-btn">View player</button>
+    <button onClick={() => history.push(RoutingPath.playerInformation, props)} className="Cards-btn">View player</button>
     
     </div>
 

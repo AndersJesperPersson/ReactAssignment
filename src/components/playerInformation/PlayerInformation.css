@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+.player-wrapper{
+    width: 40%;
+    margin:auto;
+    color:#30553c;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+
+}
+
+.player-header{
+font-family: "Grechen Fuemen";
+font-size: 40px;
+}
+
+.player-img{
+    position: absolute;
+    border-radius: 50%;
+    border: 4px  #30553c solid;
+    left: 40%;
+    max-width: 200px;
+}

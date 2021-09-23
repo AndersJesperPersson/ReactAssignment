@@ -33,7 +33,7 @@ const displayData = () => {
         key = {myEvent?.id}
         name={myEvent?.name}
         date={myEvent?.dates?.start?.localDate}
-        price={myEvent.priceRanges? myEvent.priceRanges[0].min:"100"}
+        price={myEvent.priceRanges? myEvent.priceRanges[0].min:100}
         currency={myEvent.priceRanges? myEvent.priceRanges[0].currency:"USD"}
         url= {myEvent.url}
         img= {myEvent.images[0].url}

@@ -1,0 +1,19 @@
+.cart-view{
+    padding-bottom: 6vh;
+    color: 
+
+}
+
+.cart-name{
+
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.cart-sum{
+    margin-left: 1rem;
+}
+
+.cart-wrapper{
+    width: 30%
+}

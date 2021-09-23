@@ -16,6 +16,7 @@ function createCard(participant){
         hcp={participant.HCP}
         img={participant.imgURL}
         styleTop={participant.styleTop}
+        story={participant.Story}
      
         />
        
