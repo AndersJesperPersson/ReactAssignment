@@ -2,10 +2,12 @@ import React, {useContext} from 'react'
 import Grid from '@mui/material/Grid';
 import "./Footer.css"
 import { WeatherContext } from '../../shared/provider/WeatherProvider';
+import { useHistory } from 'react-router';
 
 export const Footer = () => {
 
     const [weather, setWeather] = useContext(WeatherContext)
+    const history = useHistory()
 
     const  displayWeather = () =>{
         return(
@@ -25,7 +27,7 @@ className="weather-img"/>
     return (
         <footer>
             <Grid container spacing={2}>
-                <Grid  item lg={12} container> 
+            <Grid  item lg={12} container> 
                 <Grid  item lg={5}/> 
               <Grid item lg={2}> {displayWeather()}</Grid>
               <Grid  item lg={5}/> 

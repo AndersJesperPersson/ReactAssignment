@@ -49,7 +49,7 @@ function NavigationBar (){
              </li> </Grid>
 
              <Grid item lg={1}>             <li>
-            <span onClick={() => history.push(RoutingPath.shopView)} className="nav-style"> 
+            <span onClick={() => authenticatedUser? history.push(RoutingPath.shopView):alert("You have to login to see this page")} className="nav-style"> 
              Shop
              </span>
              </li> </Grid>
@@ -58,7 +58,7 @@ function NavigationBar (){
 
 <Grid item lg={1}>           
   <li>
-            <span onClick={() => history.push(RoutingPath.cartView)} className="nav-style"> 
+            <span onClick={() => authenticatedUser? history.push(RoutingPath.cartView):alert("You have to login to see this page") } className="nav-style"> 
              <img src={Cart} alt="Cart" className="cart-logo"/>
              </span>
              </li> </Grid>
